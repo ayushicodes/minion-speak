@@ -1,81 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Banana-speak</title>
     <style>
-        * {
-            display: flexbox;
+      * {
+        margin: 0;
+        padding: 0;
+        display: flexbox;
+      }
+
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        background-color: #9b8f45;
+        height: 70px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        padding-top: 20px;
+        font-size: 35px;
+        margin: 0;
+      }
+
+      #txt-input {
+        width: 80%;
+        height: 20vh;
+        display: block;
+        margin-left: 150px;
+        margin-top: 50px;
+        font-size: 30px;
+        padding: 1rem;
+      }
+
+      button {
+        margin-top: 20px;
+        background-color: thistle;
+        font-size: 25px;
+      }
+
+      #text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 25px;
+      }
+
+      #output {
+        width: 80%;
+        height: 20vh;
+        display: block;
+        border: 1px solid black;
+        margin-left: 150px;
+        font-size: 30px;
+      }
+
+      footer {
+        bottom: 15px;
+        background-color: #9b8f45;
+        width: 100%;
+        transform: translateY(50px);
+        height: 70px;
+        /* display: flex; */
+      }
+      @media (max-width: 400px) {
+        .txtarea {
+          display: flex;
+          transform: translateX(-80px);
         }
-
-        body {
-            text-align: center;
-        }
-
-        h1 {
-            background-color: #9b8f45;
-            height: 70px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            padding-top: 20px;
-            font-size: 35px;
-            margin: 0;
-        }
-
-        #txt-input {
-            width: 80%;
-            height: 20vh;
-            display: block;
-            margin-left: 150px;
-            margin-top: 50px;
-            font-size: 30px;
-            padding: 1rem;
-
-        }
-
-        button {
-            margin-top: 20px;
-            background-color: thistle;
-            font-size: 25px;
-        }
-
-        #text {
-            margin-top: 20px;
-            margin-bottom: 20px;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size: 25px;
-        }
-
         #output {
-            width: 80%;
-            height: 20vh;
-            display: block;
-            border: 1px solid black;
-            margin-left: 150px;
-            font-size: 30px;
+          border: 1px solid black;
+          display: flex;
+          transform: translateX(-115px);
         }
-
-        footer {
-            bottom: 15px;
-            background-color: #9b8f45;
-            width: 100%;
-            transform: translateY(50px);
-            height: 70px;
-            /* display: flex; */
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 class="banana">Minion Speak</h1>
     <script src="app.js" type="text/javascript"></script>
-    <textarea id="txt-input" placeholder="Put Your Sentence Here!!"></textarea>
+    <div class="txtarea">
+      <textarea
+        id="txt-input"
+        placeholder="Put Your Sentence Here!!"
+      ></textarea>
+    </div>
     <button id="btn-translate">Translate</button>
-    <div id="text" style="font-size: large;">Output will comehere👇</div>
+    <div id="text" style="font-size: large">Output will comehere👇</div>
     <div id="output"></div>
     <footer></footer>
-</body>
-
+  </body>
 </html>
