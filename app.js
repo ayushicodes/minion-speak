@@ -26,7 +26,7 @@ function clickHandler() {
 }
 
 window.onload = function () {
-    var btntranslate = document.querySelector("#btn-translate");
+    var btntranslate = document.querySelector("#btn");
 
     if (btntranslate) {
         btntranslate.addEventListener("click", clickHandler);
