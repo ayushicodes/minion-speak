@@ -41,19 +41,40 @@
 
     textarea {
       border: 1px solid black;
+      width: 50vw;
+      height: 20vh;
+      font-size: 25px;
 
     }
 
     .container .text-container #btn {
-      margin: 10%;
-      width: 50%;
-      height: 10%;
-      cursor: grabbing;
+      margin-top: 10%;
+      margin-bottom: 10%;
     }
 
 
 
 
+    @media screen and (max-width: 768px) {
+      textarea {
+        width: 70vw;
+        height: 30vh;
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      textarea {
+        width: 70vw;
+        height: 30vh;
+        font-size: 15px;
+      }
+
+      .container .text-container #btn {
+        margin-top: 20%;
+        margin-bottom: 20%;
+      }
+    }
 
     /* button {
       display: flex;
@@ -95,9 +116,9 @@
       <h1>Minion Speak</h1>
     </div>
     <div class="text-container">
-      <textarea id="txt-input" rows="10" cols="70" placeholder="Put Your Sentence Here!!"></textarea>
+      <textarea id="txt-input" placeholder="Put Your Sentence Here!!"></textarea>
       <button id="btn">Translate</button>
-      <textarea id="output" rows="10" cols="70" placeholder="Output will come here 👇"></textarea>
+      <textarea id="output" placeholder="Output will come here 👇"></textarea>
     </div>
     <footer></footer>
   </div>
