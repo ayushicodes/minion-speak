@@ -13,6 +13,13 @@
       box-sizing: border-box;
     }
 
+    body {
+      background-image: url('Minion.png');
+      /* background-size: cover; */
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+
     .container {
       display: flex;
       justify-content: center;
@@ -26,6 +33,9 @@
       position: fixed;
       top: 5%;
       text-align: center;
+      text-shadow: 2px 2px 4px #FED93B;
+      color: white;
+      font-size: 25px;
     }
 
     .text-container {
@@ -39,11 +49,11 @@
     }
 
     textarea {
-      border: 1px solid rgba(0, 0, 0, 0.3);
+      border: 1px solid #FED93B;
       width: 50vw;
       height: 20vh;
       font-size: 25px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 5px #FED93B;
 
     }
 
@@ -55,18 +65,34 @@
       margin-top: 5%;
       margin-bottom: 5%;
       height: 5vh;
-      width: 30%;
+      width: 40%;
       align-self: center;
-      border: 1px solid rgba(0, 0, 0, 0.3);
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+      border: 1px solid #FED93B;
+      background-color: #FED93B;
+      color: white;
+      letter-spacing: 3px;
+      font-weight: 700;
+      font-size: 20px;
+      box-shadow: 0 0 5px #FED93B;
     }
 
 
 
 
     @media screen and (max-width: 768px) {
+      body {
+
+        background-image: url('https://s7.orientaltrading.com/is/image/OrientalTrading/VIEWER_ZOOM/minions-stuart-kevin-and-bob-stand-up~14101091');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+      }
+
+
       .container .heading {
         top: 0;
+        font-size: 20px;
       }
 
       textarea {
@@ -78,8 +104,17 @@
     }
 
     @media screen and (max-width: 480px) {
+      body {
+        background-image: url('https://s7.orientaltrading.com/is/image/OrientalTrading/VIEWER_ZOOM/minions-stuart-kevin-and-bob-stand-up~14101091');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+      }
+
       .container .heading {
         top: 0;
+        font-size: 18px;
       }
 
       textarea {
@@ -93,38 +128,6 @@
         margin-bottom: 10%;
       }
     }
-
-    /* button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      outline: none;
-      cursor: pointer;
-      width: 150px;
-      height: 50px;
-      margin-top: 5%;
-      background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
-      border-radius: 30px;
-      border: 1px solid #8F9092;
-      transition: all 0.2s ease;
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: #606060;
-      text-shadow: 0 1px #fff;
-    } */
-
-    /* button:hover {
-      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-    }
-
-    button:active {
-      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-    }
-
-    button:focus {
-      box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-    } */
   </style>
 </head>
 
