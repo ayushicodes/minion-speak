@@ -24,7 +24,7 @@
 
     .container .heading {
       position: fixed;
-      top: 0;
+      top: 5%;
       text-align: center;
     }
 
@@ -35,35 +35,53 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      /* height: 100vh;
-      width: 100%; */
+
     }
 
     textarea {
-      border: 1px solid black;
+      border: 1px solid rgba(0, 0, 0, 0.3);
       width: 50vw;
       height: 20vh;
       font-size: 25px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 
     }
 
+    textarea:focus {
+      outline: none;
+    }
+
     .container .text-container #btn {
-      margin-top: 10%;
-      margin-bottom: 10%;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      height: 5vh;
+      width: 30%;
+      align-self: center;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
 
 
 
 
     @media screen and (max-width: 768px) {
+      .container .heading {
+        top: 0;
+      }
+
       textarea {
         width: 70vw;
         height: 30vh;
         font-size: 18px;
       }
+
     }
 
     @media screen and (max-width: 480px) {
+      .container .heading {
+        top: 0;
+      }
+
       textarea {
         width: 70vw;
         height: 30vh;
@@ -71,8 +89,8 @@
       }
 
       .container .text-container #btn {
-        margin-top: 20%;
-        margin-bottom: 20%;
+        margin-top: 10%;
+        margin-bottom: 10%;
       }
     }
 
@@ -116,9 +134,9 @@
       <h1>Minion Speak</h1>
     </div>
     <div class="text-container">
-      <textarea id="txt-input" placeholder="Put Your Sentence Here!!"></textarea>
+      <textarea id="txt-input"></textarea>
       <button id="btn">Translate</button>
-      <textarea id="output" placeholder="Output will come here 👇"></textarea>
+      <textarea id="output"></textarea>
     </div>
     <footer></footer>
   </div>
