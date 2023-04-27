@@ -13,39 +13,49 @@
       box-sizing: border-box;
     }
 
-
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      flex-wrap: wrap;
-
-
+      height: 100vh;
+      width: 100%;
     }
 
     .container .heading {
-      font-size: 24px;
-      background-color: #FFD55E;
-      width: 100%;
+      position: fixed;
+      top: 0;
       text-align: center;
-      color: white;
-      letter-spacing: 3px;
-      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .container textarea {
-      margin-top: 5%;
-      height: 8rem;
+    .text-container {
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* height: 100vh;
+      width: 100%; */
+    }
+
+    textarea {
+      border: 1px solid black;
+
+    }
+
+    .container .text-container #btn {
+      margin: 10%;
       width: 50%;
-      font-size: 24px;
-      border: 4px solid black;
-      border-radius: 14px;
-      padding: 4px;
+      height: 10%;
+      cursor: grabbing;
     }
 
 
-    button {
+
+
+
+    /* button {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -63,9 +73,9 @@
       font-weight: 600;
       color: #606060;
       text-shadow: 0 1px #fff;
-    }
+    } */
 
-    button:hover {
+    /* button:hover {
       box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
     }
 
@@ -75,18 +85,7 @@
 
     button:focus {
       box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 5px 3px #999, inset 0 0 30px #aaa;
-    }
-
-
-
-
-    footer {
-      position: absolute;
-      background-color: #FFD55E;
-      bottom: 0;
-      height: 5rem;
-      width: 100%;
-    }
+    } */
   </style>
 </head>
 
@@ -95,11 +94,11 @@
     <div class="heading">
       <h1>Minion Speak</h1>
     </div>
-
-    <textarea id="txt-input" placeholder="Put Your Sentence Here!!"></textarea>
-
-    <button id="btn">Translate</button>
-    <textarea id="output" placeholder="Output will come here 👇"></textarea>
+    <div class="text-container">
+      <textarea id="txt-input" rows="10" cols="70" placeholder="Put Your Sentence Here!!"></textarea>
+      <button id="btn">Translate</button>
+      <textarea id="output" rows="10" cols="70" placeholder="Output will come here 👇"></textarea>
+    </div>
     <footer></footer>
   </div>
   <script src="app.js" type="text/javascript"></script>
